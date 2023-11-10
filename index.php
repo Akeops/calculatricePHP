@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="" method="POST">
+        <label for="number1">Nombre 1</label>
+        <input type="text" name="number1" placeholder="nombre 1">
+
+
+
+    </form>
 </body>
 </html>
