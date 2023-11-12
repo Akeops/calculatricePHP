@@ -14,7 +14,7 @@ switch ($operator) {
         break;
     case '/':
         if($number1 == 0 || $number2 == 0) {
-            echo "Il n'est pas possible de faire ce calcul";
+            throw new Exception('Nombre invalide');
         } else {
             $resultat = $number1 / $number2;
             break;
