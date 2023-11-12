@@ -13,11 +13,20 @@ switch ($operator) {
         $resultat = $number1 - $number2;
         break;
     case '/':
-        $resultat = $number1 / $number2;
-        break;
+        if($number1 == 0 || $number2 == 0) {
+            echo "Il n'est pas possible de faire ce calcul";
+        } else {
+            $resultat = $number1 / $number2;
+            break;
+        }
+        
     case '*':
         $resultat = $number1 * $number2;
         break;
     }
 
     echo "Résultat = " . $resultat;
+
+    ?>
+
+    <br><a href="index.php">Retour à la calculatrice</a>
